@@ -17,6 +17,8 @@ jobs:
           distribution: 'temurin'
       - name: Grant execute permission to gradlew
         run: chmod +x gradlew
+      - name: Clean Gradle cache
+        run: ./gradlew clean
       - name: Build Release APK
         run: ./gradlew assembleRelease
       - name: Upload APK
