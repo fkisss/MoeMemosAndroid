@@ -1,7 +1,8 @@
 plugins {
     id 'com.android.application' version '7.4.2' apply false
     id 'org.jetbrains.kotlin.android' version '1.9.20' apply false
-    id 'androidx.room'
+    // 指定 androidx.room 插件版本
+    id 'androidx.room' version '2.6.0' apply false
 }
 
 android {
